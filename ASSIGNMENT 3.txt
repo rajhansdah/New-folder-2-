@@ -1,0 +1,54 @@
+ASSIGNMENT 3
+1. Write a Java program to print the following pattern : 
+*****
+****
+***
+**
+*
+class Pattern{
+		public static void main(String[] args){
+	int i,j;
+	for(i=1;i<=10;i++)
+	{
+		for(j=i;j<=10;j++)
+{
+
+		System.out.print("*");
+}
+System.out.println();
+
+	
+		}
+		}
+}
+
+
+
+ Q3. Take a number N from the user as input and find all prime numbers upto N. 
+
+package prime;
+import java.util.Scanner;
+public class Prime{
+    public static void main(String[] args){
+        Scanner num=new Scanner(System.in);
+         System.out.print("enter the value no is=");
+         int n=num.nextInt();
+         System.out.println("list of prime nummber="+n);
+         int a,b,c;
+         
+   for(a=2;a<n;a++)
+   {
+       c=0;
+       for(b=2;b<a;b++)
+       {
+           if(a%b==0)
+               c=1;
+         
+       }
+       if(c==0)
+       {
+           System.out.println(+a);
+       }
+   }
+    }
+    
