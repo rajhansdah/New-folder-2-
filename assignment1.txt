@@ -1,0 +1,15 @@
+Q1. Print hellow world.
+ANS.
+      class helloworld{
+	public static void main(String args[]){
+		System.out.println("hellow k");
+   		}
+
+
+Q2. WAP in Java to Print your Name
+Program:-
+class name {
+	public static void main (String args[]){
+		System.out.println("RAGHUNATH KUMAR");
+		}
+	}

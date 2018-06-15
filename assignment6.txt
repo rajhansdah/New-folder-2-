@@ -1,0 +1,61 @@
+Q1. Creat an interface called Animals with speak(), eat() methods. creat 2 classes Cat and Dog implimenting their own versions of these methods.
+package animal12;
+
+public interface Animal12 {
+    public void eat();
+    public void speak();
+}
+
+package animal12;
+
+public class Cat12 implements Animal12 {
+    public void speak(){
+        System.out.println("cat  can speak ");
+    }
+    public void eat(){
+        System.out.println("cat eats rat");
+    }
+    public  static void main(String args[])
+    {
+        Cat12 cat=new Cat12();
+        cat.speak();
+        cat.eat();
+    }
+}
+
+package animal12;
+public class Dog12 implements Animal12 {
+    public void speak(){
+        System.out.println("Dog  can speak ");
+    }
+    public void eat(){
+        System.out.println("Dog eats pedii gree");
+    }
+    public  static void main(String args[])
+    {
+                Dog12 dog=new Dog12();
+
+        dog.speak();
+        dog.eat();
+    }
+    }
+
+Q3.3Take two numbers as string input and convert them into Integers and find the maximum of the two numbers.
+package number1;
+public class Number1{
+ public static void main(String[] args) {
+     int a = Integer.parseInt(args[0]);
+     int b = Integer.parseInt(args[1]);
+     if(a<b)
+             {
+
+                       System.out.println("a is greater number");
+             }   
+                      else
+             {
+                        System.out.println("b  is greater number");
+                     }
+         
+     }
+ }
+      
