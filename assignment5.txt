@@ -1,0 +1,106 @@
+1.Study about Static blocks and push 1 example code on github.
+program:-
+package Staticblock;
+
+public class Static {
+
+    public static void main(String[] args) {
+    System.out.println("it is a static block");
+    }
+    static{
+        System.out.println("static block");
+    
+   
+    }
+    
+}
+
+2. Make Class Animal(with properties breed and colour and function speak()), class Dog and class Cat. Dog and Class inherit from Animal class.You need to override speak function of Animal Class. 3. Overload Print function to accept Null arguments , one integer , one float. 4. Print length of longest increasing sub array.
+program:-
+package Animal;
+
+public class driver {
+    public static void main(String[] args) {
+        Animal animal=new Animal();
+        animal.speak();
+        Dog dog=new Dog();
+        dog.speak();
+        Cat cat=new Cat();
+        cat.speak();
+        
+    }
+    
+}
+      package Animal;
+
+public class driver {
+    public static void main(String[] args) {
+        Animal animal=new Animal();
+        animal.speak();
+        Dog dog=new Dog();
+        dog.speak();
+        Cat cat=new Cat();
+        cat.speak();
+        
+    }
+    
+}
+	package animal;
+
+
+public class Dog extends Animal {
+    String breed="dog";
+    String color="black";
+    public void speak()
+    {
+        System.out.println("I am a dog ");
+    }          
+           
+    
+}
+	package animal;
+public class Cat extends Animal {
+String breed="Cat";
+String color="brown";
+public void speak()
+{
+System.out.println("I am a cat");
+}
+}
+
+
+Q4. Print length of longest increasing sub array.
+
+
+package javaapplication21;
+
+public class JavaApplication21 {
+
+    public static void main(String[] args) {
+        int arr[]={2,5,9,5,7,3,8,6,4};
+        int max = 1, min = 1, temp = 0;
+          
+        for (int i = 1;i<arr.length; i++)
+        {
+            if (arr[i] > arr[i-1])
+                min++;
+            else
+            {
+                if (max < min)    
+                {
+                    max = min;
+                    temp = i - max;
+                }
+                min = 1;    
+            }    
+        }
+        if (max <min)
+        { 
+            max = min;
+            temp = arr.length - max;
+        }
+        for (int i = temp; i < max+temp; i++)
+            System.out.print(arr[i] + " ");
+    }
+    
+}
