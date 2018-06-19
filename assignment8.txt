@@ -1,0 +1,26 @@
+1.ASSIGNMENT 8
+Make a text file 'abc.txt' and write multiple paths in it(say C:/Users/Test/video.mp4).Read the contents of the file and try to print the path from the file.
+2/2 Make a text file 'abc.txt' and write multiple paths in it(say C:/Users/Test/video.mp4).Read the contents of the file and try to print the path from the file.
+
+
+package filemake;
+import java.io.*;
+public class FileMake {
+    public static void main(String[] args)throws IOException{
+   File file = new File("C:\\Users\\mona\\Desktop\\Raj.txt");
+   boolean check= file.isFile();
+   FileInputStream in;
+   try
+   {
+       in = new FileInputStream(file);
+       int c;
+       while((c=in.read()) != -1){
+           System.out.print(""+(char)c);
+       }
+      
+   }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        }
+   }
