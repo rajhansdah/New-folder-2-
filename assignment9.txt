@@ -1,0 +1,29 @@
+Q1.Use the text file abc.txt and write its contents in another file xyz.txt.
+ Print the contents of xyz.txt for verification.
+
+package fileWrite;
+import java.io.*;
+class FileWrite1 {
+    public static void main(String[] args)throws IOException{
+   File file = new File("C:\\Users\\mona\\Desktop\\Raj.dv.txt");
+   File  xyz2 = new File("C:\\Users\\mona\\Desktop\\Raj123.txt");
+   FileReader in = new FileReader(file);
+   FileWriter out = new FileWriter(xyz2);
+   int c;
+   while((c=in.read())!=-1){
+       out.write((char)c);
+   }
+   in.close();
+   out.close();
+     FileReader make = new FileReader(xyz2);
+      int d;
+      while((d=make.read())!=-1){
+    
+      System.out.print((char)d);
+   } 
+   
+    
+      make.close();
+    
+   }
+}
