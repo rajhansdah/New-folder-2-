@@ -1,0 +1,50 @@
+
+package set;
+import java.util.*;
+Q1.WAP of java to compare two sets.
+
+public class Set {
+  public static void main(String[] args) {
+       HashSet hashSet = new HashSet();
+       hashSet.add(5);
+       hashSet.add(3);
+      hashSet.add(1);
+         hashSet.add(4);
+        
+       
+        System.out.println("hashSet"+hashSet);
+         HashSet hashSet2 = new HashSet();
+       hashSet2.add(1);
+      hashSet2.add(2);
+      hashSet2.add(3);
+     
+         hashSet.retainAll(hashSet2);
+         System.out.println(hashSet);
+        
+    }
+    
+}
+
+Q.22. Write a Java program to associate the specified value with the specified key in a HashMap.
+
+
+package transportation;
+import java.util.HashMap;
+ 
+ class Transportation {
+
+    
+    public static void main(String[] args) {
+    HashMap obj = new HashMap();
+     obj.put("chandigarh to ludhiana:",300);
+     obj.put("chandigarh to umbala:",200);
+     obj.put("chandigarh to delhi:",500);
+     obj.put("chandigarh to gobindgarh:",70);
+     obj.put("chandigarh to jalandhar:",130);
+     
+        obj.replace("chandigarh to gobindgarh:",70,600);
+    
+    System.out.print(obj);
+}
+ }
+ 
