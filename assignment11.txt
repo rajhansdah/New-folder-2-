@@ -1,8 +1,7 @@
+Q1.WAP of java to compare two sets.
 
 package set;
 import java.util.*;
-Q1.WAP of java to compare two sets.
-
 public class Set {
   public static void main(String[] args) {
        HashSet hashSet = new HashSet();
@@ -25,7 +24,7 @@ public class Set {
     
 }
 
-Q.22. Write a Java program to associate the specified value with the specified key in a HashMap.
+Q.2. Write a Java program to associate the specified value with the specified key in a HashMap.
 
 
 package transportation;

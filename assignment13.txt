@@ -1,0 +1,25 @@
+1. Create a multi-threaded program with a synchronised method to print values from 1 to 1000 using 2 threads.
+package threads;
+
+public class Threads extends Thread{
+    
+  
+    public static void main(String[] args) {
+        
+        Thread thread1 = new Thread(new Threads());
+        Thread thread2 = new Thread();
+        thread1.start();
+        thread2.start();
+        thread1.run();
+      
+    }
+        public void run()
+        {
+            int i;
+            
+        for( i=0; i<1000; i++){
+            System.out.println(i);
+        }
+    }
+    }
+   

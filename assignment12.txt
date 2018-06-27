@@ -1,0 +1,134 @@
+
+2. Create a generic Sorting function that can sort any type of array (primitive types)
+package DID;
+
+import static java.util.Arrays.sort;
+
+public class GenericSort 
+{
+
+    
+    static <T> void print(T array[])
+    {
+        for (T java : array)
+        {
+            System.out.print(" "+java);
+        }
+    }
+    
+    public static void main(String args[])
+    {
+        Character array1[]={'R','A','G','H','U','N','A','T','H'};
+        Integer array2[]={1,4,6,8,0,};
+        Double array3[]={1.4,4.3,3.5,5.6,6.3,3.6};
+        
+        System.out.println(" Aefore Sorting");
+        print(array1);
+        System.out.println("\n After Sorting");
+        sort(array1);
+        print(array1);
+        
+        
+        System.out.println("\nInteger Array before Sorting");
+        print(array2);
+        System.out.println("\nInteger Array after Sorting");
+        sort(array2);
+        print(array2);
+        
+        System.out.println("\nDouble Array before Sorting");
+        print(array3);
+        System.out.println("\nDouble Array after Sorting");
+        sort(array3);
+        print(array3);
+    }
+
+    
+}
+
+
+3.Create a generic print function that can print all types of arrays (primitive types).
+
+package dance;
+public class GenericArray 
+{
+    static <T> void print(T array[])
+    {
+        for (T JAVA : array)
+        {
+            System.out.print(" "+JAVA);
+        }
+    }
+    
+    public static void main(String args[])
+    {
+        Character Array1[]={'R','A','G','H','U','N','A','T','H'};
+        Integer Array2[]={4,5,2,6,8,2,1,};
+        
+        
+        print(Array1);
+        System.out.println();
+        print(Array2);
+    }
+    
+}
+
+
+4. Write a java program that sorts the list on the basis of age and name.
+
+package sort;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Sort implements Comparable<Sort>
+{
+    String Name;
+    int  Age;
+    
+    Sort(String Name, int Age)
+    {
+        this.Name=Name;
+        this.Age=Age;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public int getAge() {
+        return Age;
+    }
+
+    public static void main(String[] args) 
+    {
+        Sort obj1 = new Sort("Gupta",35);
+        Sort obj2 = new Sort("Raj",21);
+        Sort obj3 = new Sort("Krishna",26);
+        Sort obj4 = new Sort("Ashutosh",29);
+        Sort obj5 = new Sort("Laxman",22);
+        Sort obj6 = new Sort("neetu",20);
+        
+        ArrayList<Sort> java=new ArrayList<Sort>();
+        java.add(obj1);
+        java.add(obj2);
+        java.add(obj3);
+        java.add(obj4);
+        java.add(obj5);
+        java.add(obj6);
+        java.add(new Sort("raj",21));
+        Collections.sort(java);
+        for (Sort sort : java)
+        System.out.println(sort.getName()+" "+sort.getAge());
+                
+    
+                }
+    @Override
+    public int compareTo(Sort t) {
+        return this.Age-t.Age;
+    }
+    
+}
+
+
+
+
