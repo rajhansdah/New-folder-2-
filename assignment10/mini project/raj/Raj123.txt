@@ -1,0 +1,10 @@
+1.Acadview
+
+2.Wthat is Hash code?
+
+3.for each algo:
+for(int x:arr){
+s.o.p(x)
+}
+
+4.letrily
